@@ -1,0 +1,1696 @@
+# Atlas Workflow Prioritization Matrix — Machine-Readable
+# Generated: 2026-03-26
+# Scores: 1-5 (1=low, 5=high). quick_win_score = (user_value + friction_reduction + forward_movement + automation_potential) - (build_difficulty + maintenance_burden + external_dependency)
+
+workflows:
+  # ── A. COMMUNICATION AND FOLLOW-THROUGH ──
+  - id: 1
+    name: overdue_text_resurfacer
+    category: communication
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 4
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 11
+    notes: "Communication debt reducer; needs message source access"
+
+  - id: 2
+    name: unanswered_question_detector
+    category: communication
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: "Needs message parsing / NLP"
+
+  - id: 3
+    name: thread_closer
+    category: communication
+    user_value: 3
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: ""
+
+  - id: 4
+    name: family_check_in_agent
+    category: communication
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 5
+    name: fiance_follow_through_agent
+    category: communication
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: "Relationship-sensitive; tread carefully"
+
+  - id: 6
+    name: tone_softener
+    category: communication
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: "Needs NLP / LLM"
+
+  - id: 7
+    name: no_reply_needed_filter
+    category: communication
+    user_value: 3
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 8
+    name: message_triage_agent
+    category: communication
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 8
+    notes: "High value but needs NLP + message access"
+
+  - id: 9
+    name: bump_draft_agent
+    category: communication
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 8
+    notes: ""
+
+  - id: 10
+    name: scheduling_reply_agent
+    category: communication
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: ""
+
+  - id: 11
+    name: multi_option_reply_generator
+    category: communication
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 3
+    notes: ""
+
+  - id: 12
+    name: promise_tracker
+    category: communication
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 5
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 11
+    notes: "Extract commitments from messages, remind on deadlines"
+
+  # ── B. PROPERTY COMMUNICATIONS AND LEASING ──
+  - id: 13
+    name: furnished_finder_lead_responder
+    category: property
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 10
+    notes: "Revenue-generating; needs email/FF access"
+
+  - id: 14
+    name: lead_screener
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 8
+    notes: ""
+
+  - id: 15
+    name: lead_score_agent
+    category: property
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 8
+    notes: ""
+
+  - id: 16
+    name: showing_coordinator
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 17
+    name: rental_market_comp_agent
+    category: property
+    user_value: 5
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: "Needs listing data source"
+
+  - id: 18
+    name: listing_refresh_agent
+    category: property
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 4
+    privacy_sensitivity: 2
+    external_dependency: 4
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 1
+    notes: "Fragile browser automation"
+
+  - id: 19
+    name: lease_packet_builder
+    category: property
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  - id: 20
+    name: lease_data_chase_agent
+    category: property
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 21
+    name: insurance_proof_tracker
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 10
+    notes: ""
+
+  - id: 22
+    name: utility_setup_reminder_agent
+    category: property
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 2
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 10
+    notes: ""
+
+  - id: 23
+    name: move_in_sequence_agent
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 8
+    notes: ""
+
+  - id: 24
+    name: move_out_sequence_agent
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 8
+    notes: ""
+
+  - id: 25
+    name: deposit_accounting_prep_agent
+    category: property
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: 8
+    notes: "Financial action"
+
+  - id: 26
+    name: maintenance_intake_agent
+    category: property
+    user_value: 5
+    friction_reduction: 4
+    forward_movement: 5
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 12
+    notes: "Telegram trigger, form capture, dispatch prep"
+
+  - id: 27
+    name: contractor_dispatch_agent
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: "Outbound action"
+
+  - id: 28
+    name: maintenance_status_tracker
+    category: property
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  - id: 29
+    name: rent_reminder_agent
+    category: property
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 13
+    notes: "Simple scheduler + Telegram notify"
+
+  - id: 30
+    name: renewal_prompt_agent
+    category: property
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 10
+    notes: ""
+
+  # ── C. BUDGET, SETTLEMENT, AND SPENDING ──
+  - id: 31
+    name: shared_expense_classifier
+    category: budget
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 11
+    notes: "Daily friction; builds merchant memory over time"
+
+  - id: 32
+    name: merchant_memory_agent
+    category: budget
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 8
+    notes: "Feeds shared_expense_classifier accuracy"
+
+  - id: 33
+    name: amazon_split_agent
+    category: budget
+    user_value: 3
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 3
+    notes: "Needs Amazon order data"
+
+  - id: 34
+    name: settlement_prep_agent
+    category: budget
+    user_value: 4
+    friction_reduction: 5
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: ""
+
+  - id: 35
+    name: installment_tracker
+    category: budget
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 3
+    external_dependency: 1
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 13
+    notes: "Pure date + amount tracking"
+
+  - id: 36
+    name: promo_apr_deadline_agent
+    category: budget
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 4
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 3
+    external_dependency: 1
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 16
+    notes: "Prevents real money loss; zero API dependency"
+
+  - id: 37
+    name: subscription_tracker
+    category: budget
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 9
+    notes: "Manual entry + reminders"
+
+  - id: 38
+    name: abnormal_purchase_detector
+    category: budget
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 4
+    notes: ""
+
+  - id: 39
+    name: refund_chase_agent
+    category: budget
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: "Outbound action"
+
+  - id: 40
+    name: duplicate_charge_detector
+    category: budget
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 41
+    name: shared_household_spend_summary_agent
+    category: budget
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 9
+    notes: ""
+
+  - id: 42
+    name: budget_drift_agent
+    category: budget
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  # ── D. RETURNS, WARRANTIES, AND CLAIMS ──
+  - id: 43
+    name: amazon_return_window_agent
+    category: returns
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 3
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 15
+    notes: "Date tracking; manual entry; prevents lost money"
+
+  - id: 44
+    name: return_pickup_scheduler
+    category: returns
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: ""
+
+  - id: 45
+    name: warranty_eligibility_agent
+    category: returns
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 46
+    name: warranty_claim_builder
+    category: returns
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: ""
+
+  - id: 47
+    name: warranty_status_agent
+    category: returns
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  - id: 48
+    name: recall_checker
+    category: returns
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  - id: 49
+    name: protection_plan_use_agent
+    category: returns
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 50
+    name: receipt_finder
+    category: returns
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 5
+    notes: ""
+
+  # ── E. SCHEDULING AND APPOINTMENTS ──
+  - id: 51
+    name: optometrist_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 4
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 52
+    name: dentist_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 4
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 53
+    name: pcp_preventive_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 4
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 54
+    name: specialist_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 4
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 55
+    name: cat_vet_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 56
+    name: contractor_estimate_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 57
+    name: car_service_scheduler
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 4
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Portal scraping; fragile"
+
+  - id: 58
+    name: reschedule_negotiator
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 4
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 2
+    trust_level_default: approval
+    recommended_phase: 3
+    quick_win_score: -2
+    notes: ""
+
+  - id: 59
+    name: pre_visit_instruction_agent
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 60
+    name: waiting_room_packet_agent
+    category: scheduling
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  # ── F. LICENSURE, CREDENTIALING, AND COMPLIANCE ──
+  - id: 61
+    name: np_license_tracker
+    category: licensure
+    user_value: 5
+    friction_reduction: 4
+    forward_movement: 5
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 15
+    notes: "Career-critical dates; zero API dependency"
+
+  - id: 62
+    name: dea_tracker
+    category: licensure
+    user_value: 5
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 14
+    notes: "Credential date"
+
+  - id: 63
+    name: bls_acls_renewal_agent
+    category: licensure
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 13
+    notes: "Credential dates"
+
+  - id: 64
+    name: ce_opportunity_agent
+    category: licensure
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 8
+    notes: ""
+
+  - id: 65
+    name: credentialing_packet_agent
+    category: licensure
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  - id: 66
+    name: employment_document_tracker
+    category: licensure
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 67
+    name: malpractice_coverage_review_agent
+    category: licensure
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 1
+    privacy_sensitivity: 3
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  - id: 68
+    name: state_federal_requirement_change_agent
+    category: licensure
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  # ── G. CAREER AND INCOME-FORWARD ──
+  - id: 69
+    name: better_job_opportunity_watcher
+    category: career
+    user_value: 5
+    friction_reduction: 2
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 6
+    notes: "High value; needs job board access"
+
+  - id: 70
+    name: recruiter_reply_agent
+    category: career
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: "Outbound"
+
+  - id: 71
+    name: compensation_comparator
+    category: career
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 72
+    name: contract_review_prep_agent
+    category: career
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  - id: 73
+    name: tax_advantaged_compensation_idea_agent
+    category: career
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 74
+    name: moonlighting_opportunity_watcher
+    category: career
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  - id: 75
+    name: rent_raise_pricing_strategy_agent
+    category: career
+    user_value: 5
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 9
+    notes: ""
+
+  - id: 76
+    name: small_business_strategy_watcher
+    category: career
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 4
+    notes: ""
+
+  # ── H. TAX, LEGAL, AND LEGISLATIVE OPPORTUNITY ──
+  - id: 77
+    name: tax_law_change_watcher
+    category: tax_legal
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 2
+    quick_win_score: 5
+    notes: ""
+
+  - id: 78
+    name: legislative_impact_interpreter
+    category: tax_legal
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 4
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 2
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: "Needs NLP"
+
+  - id: 79
+    name: deduction_opportunity_agent
+    category: tax_legal
+    user_value: 5
+    friction_reduction: 3
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 3
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 9
+    notes: ""
+
+  - id: 80
+    name: property_law_change_watcher
+    category: tax_legal
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 5
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 81
+    name: filing_deadline_tracker
+    category: tax_legal
+    user_value: 5
+    friction_reduction: 5
+    forward_movement: 5
+    build_difficulty: 1
+    maintenance_burden: 1
+    privacy_sensitivity: 2
+    external_dependency: 1
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 16
+    notes: "Critical dates; no API; high consequence"
+
+  - id: 82
+    name: evidence_pack_builder
+    category: tax_legal
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 4
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  # ── I. HOME, HOUSE, AND ENVIRONMENT ──
+  - id: 83
+    name: home_maintenance_calendar_agent
+    category: home
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 2
+    maintenance_burden: 1
+    privacy_sensitivity: 1
+    external_dependency: 1
+    automation_potential: 5
+    trust_level_default: auto
+    recommended_phase: 1
+    quick_win_score: 13
+    notes: "Seasonal reminders; no API"
+
+  - id: 84
+    name: water_drainage_concern_tracker
+    category: home
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 1
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 85
+    name: remodel_phase_manager
+    category: home
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 6
+    notes: ""
+
+  - id: 86
+    name: materials_batch_planner
+    category: home
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 1
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 87
+    name: price_drop_watcher
+    category: home
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 3
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 6
+    notes: ""
+
+  - id: 88
+    name: appliance_fixture_manual_librarian
+    category: home
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 1
+    privacy_sensitivity: 1
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 8
+    notes: ""
+
+  - id: 89
+    name: smart_home_routine_agent
+    category: home
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 4
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 3
+    notes: "Needs Home Assistant"
+
+  - id: 90
+    name: consumables_replenisher
+    category: home
+    user_value: 3
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 7
+    notes: ""
+
+  # ── J. SHOPPING, RESALE, AND ARBITRAGE ──
+  - id: 91
+    name: seekerpro_listener
+    category: shopping
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 4
+    privacy_sensitivity: 2
+    external_dependency: 4
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: "Fragile scraping"
+
+  - id: 92
+    name: clearance_value_filter
+    category: shopping
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 1
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: ""
+
+  - id: 93
+    name: facebook_marketplace_watcher
+    category: shopping
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 4
+    privacy_sensitivity: 2
+    external_dependency: 4
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: "FB scraping fragile"
+
+  - id: 94
+    name: resale_margin_estimator
+    category: shopping
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 1
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 95
+    name: pickup_decision_agent
+    category: shopping
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 1
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 96
+    name: flip_listing_builder
+    category: shopping
+    user_value: 3
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 1
+    external_dependency: 2
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 5
+    notes: ""
+
+  - id: 97
+    name: competitive_resale_scanner
+    category: shopping
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 1
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: ""
+
+  - id: 98
+    name: inventory_hold_time_tracker
+    category: shopping
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 2
+    build_difficulty: 2
+    maintenance_burden: 1
+    privacy_sensitivity: 1
+    external_dependency: 1
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: 7
+    notes: ""
+
+  # ── K. TRAVEL, TESLA, AND MOBILITY ──
+  - id: 99
+    name: tesla_readiness_agent
+    category: travel
+    user_value: 3
+    friction_reduction: 2
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 2
+    external_dependency: 4
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 3
+    quick_win_score: -1
+    notes: "Tesla API needed"
+
+  - id: 100
+    name: award_trip_opportunity_agent
+    category: travel
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 3
+    build_difficulty: 4
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 3
+    quick_win_score: 1
+    notes: "Complex multi-source"
+
+  # ── L. ADDITIONAL HIGH-VALUE WORKFLOWS ──
+  - id: 101
+    name: date_night_planner
+    category: additional
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 3
+    build_difficulty: 2
+    maintenance_burden: 2
+    privacy_sensitivity: 2
+    external_dependency: 2
+    automation_potential: 4
+    trust_level_default: draft
+    recommended_phase: 1
+    quick_win_score: 9
+    notes: "Relationship value; fun; demonstrates system"
+
+  - id: 102
+    name: credit_card_spend_optimizer
+    category: additional
+    user_value: 4
+    friction_reduction: 3
+    forward_movement: 3
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 3
+    trust_level_default: draft
+    recommended_phase: 2
+    quick_win_score: 4
+    notes: ""
+
+  - id: 103
+    name: dual_departure_presence_automation
+    category: additional
+    user_value: 4
+    friction_reduction: 4
+    forward_movement: 2
+    build_difficulty: 3
+    maintenance_burden: 3
+    privacy_sensitivity: 3
+    external_dependency: 4
+    automation_potential: 4
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 4
+    notes: "Needs Home Assistant + presence"
+
+  - id: 104
+    name: private_intent_capture_router
+    category: additional
+    user_value: 5
+    friction_reduction: 4
+    forward_movement: 4
+    build_difficulty: 3
+    maintenance_burden: 2
+    privacy_sensitivity: 5
+    external_dependency: 1
+    automation_potential: 3
+    trust_level_default: auto
+    recommended_phase: 2
+    quick_win_score: 10
+    notes: "Local only; high privacy; captures ad-hoc user intents"
+
+  - id: 105
+    name: market_moving_thesis_agent
+    category: additional
+    user_value: 4
+    friction_reduction: 2
+    forward_movement: 4
+    build_difficulty: 4
+    maintenance_burden: 3
+    privacy_sensitivity: 4
+    external_dependency: 3
+    automation_potential: 2
+    trust_level_default: manual_only
+    recommended_phase: 3
+    quick_win_score: 2
+    notes: "High risk; complex; manual-only trust level"

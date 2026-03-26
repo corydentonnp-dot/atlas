@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "atlas"
+version = "0.1.0"
+description = "Personal AI Operations Platform — local-first workflow orchestration engine"
+requires-python = ">=3.11"
+license = {text = "Private"}
+authors = [{name = "Cory"}]
+
+dependencies = [
+    # API
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    # Database
+    "sqlalchemy[asyncio]>=2.0.25",
+    "asyncpg>=0.29.0",
+    "alembic>=1.13.0",
+    # Redis / Task Queue
+    "redis>=5.0.0",
+    "arq>=0.25.0",
+    # Config
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    # Logging
+    "structlog>=24.1.0",
+    # HTTP
+    "httpx>=0.26.0",
+    # Telegram
+    "python-telegram-bot>=20.7",
+    # Utilities
+    "python-dateutil>=2.8.0",
+    "pytz>=2024.1",
+    "orjson>=3.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Testing
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "httpx>=0.26.0",  # for TestClient
+    # Linting / Formatting
+    "ruff>=0.2.0",
+    "black>=24.1.0",
+    "mypy>=1.8.0",
+    # Type stubs
+    "types-python-dateutil",
+    "types-pytz",
+    "types-redis",
+]
+browser = [
+    "playwright>=1.41.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["atlas*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "T20",  # flake8-print
+]
+ignore = ["E501"]  # line length handled by black
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false  # relaxed for initial scaffold
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["atlas"]
+omit = ["tests/*", "migrations/*"]
