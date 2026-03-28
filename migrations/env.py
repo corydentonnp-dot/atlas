@@ -11,10 +11,9 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
-# TODO: Import Base from atlas.models once models are implemented
-# from atlas.models.base import Base
-# target_metadata = Base.metadata
-target_metadata = None  # Will be set when models are created
+from atlas.models.base import Base
+
+target_metadata = Base.metadata
 
 config = context.config
 if config.config_file_name is not None:

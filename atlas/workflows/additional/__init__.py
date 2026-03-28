@@ -4,6 +4,6 @@ Workflows:
   #101 daily_briefing_agent
   #102 weekly_review_agent
   #103 goal_tracker_agent
-  #104 emergency_protocol_agent
+  #104 private_intent_capture_router
   #105 system_health_monitor
 """
