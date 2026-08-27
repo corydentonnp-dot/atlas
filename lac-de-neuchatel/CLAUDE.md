@@ -31,6 +31,18 @@ re-imports the script from disk each call, so no Fusion restart is needed.
 If `ping` fails, Fusion is closed or the add-in is not running
 (`Utilities > Add-Ins > Add-Ins` tab). Do not guess — ask.
 
+## The case
+
+`docs/CASE-DESIGN.md` holds the style reference (saved images in
+`docs/reference/`), the panel-in-case fit maths and the open design questions.
+The carved panel is an **insert** that drops into a cherry case; the chain
+grooves hold the necklace. Not cut yet, and it does not block the carving.
+
+One finding recorded there matters to the CAM as well: **the finished panel is
+9.40 mm thick, not the 11.0 mm the build sheet states.** A 12 mm blank faced
+down to lake Z +3.40 over a model base at -6.00 leaves 9.40. Do not size a case
+cavity from the build sheet number without checking this first.
+
 ## Facts about this job that are easy to get wrong
 
 - **`cam/01-terrain.stl` is broken and must never be carved.** 99.7% of its
