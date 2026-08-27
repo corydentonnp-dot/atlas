@@ -5,15 +5,23 @@ a repair tool for the terrain mesh.
 
 ```
 lac-de-neuchatel/
-├── LacDeNeuchatel_CAM.py     the Fusion script — run this from Scripts and Add-Ins
+├── LacDeNeuchatel_CAM.py     the Fusion script — run from Scripts and Add-Ins
 ├── repair_terrain_stl.py     run this FIRST, outside Fusion
+├── CLAUDE.md                 project notes for Claude Code
 ├── README.md
+├── bridge/                   drive Fusion from the command line — see bridge/README.md
 └── cam/
     ├── 01-terrain.stl        as supplied — do not carve this
     ├── 01-terrain-FIXED.stl  repaired, watertight, use this
     ├── 02-sketch.dxf
     └── 04-build-sheet.txt
 ```
+
+**Driving Fusion from outside.** `bridge/` holds a Fusion add-in that opens a
+token-protected localhost endpoint, so Claude Code (or any script) can run
+Python inside Fusion and read the result back — edit, rebuild, regenerate,
+re-post without touching a dialog. Setup and the security model are in
+[bridge/README.md](bridge/README.md).
 
 ---
 

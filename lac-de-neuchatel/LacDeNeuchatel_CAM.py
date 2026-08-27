@@ -199,6 +199,11 @@ CONFIG = {
     # this on when a parameter below refuses to set and you need its real name
     # on your version of Fusion.
     "dump_parameters": True,
+
+    # Set False when driving this script through the FusionBridge add-in.
+    # See notify() below for why a modal dialog is fatal to a bridge run.
+    # CONFIG["folder"] must also be set, because the folder picker is modal.
+    "show_dialog": True,
 }
 
 
@@ -998,8 +1003,24 @@ WHAT THE FUSION CAM API CANNOT DO -- you still have to click these
 """
 
 
+def notify(ui, app, message, title="Lac de Neuchatel CAM"):
+    """
+    Report without blocking when the script is driven headless.
+
+    Every messageBox is modal, and modal means it holds Fusion's main thread.
+    That is the same thread the FusionBridge add-in needs in order to answer,
+    so a dialog raised during a bridge-driven run hangs the request until
+    somebody clicks OK on a window they may not even be looking at.
+    """
+    if app is not None:
+        app.log("%s: %s" % (title, message))
+    if CONFIG.get("show_dialog", True) and ui is not None:
+        ui.messageBox(message, title)
+
+
 def run(context):
     ui = None
+    app = None
     try:
         app = adsk.core.Application.get()
         ui = app.userInterface
@@ -1008,11 +1029,17 @@ def run(context):
         products = doc.products
         design = adsk.fusion.Design.cast(products.itemByProductType("DesignProductType"))
         if design is None:
-            ui.messageBox("Open a design document first, then run this script.")
+            notify(ui, app, "Open a design document first, then run this script.")
             return
 
-        # Work out where the input files live.
+        # Work out where the input files live. The folder picker is modal too,
+        # so a headless run has to have been told the folder up front.
         folder = CONFIG["folder"]
+        if not folder and not CONFIG.get("show_dialog", True):
+            notify(ui, app, "CONFIG['folder'] must be set when show_dialog is "
+                            "False -- the folder picker is modal and would hang "
+                            "a bridge-driven run.")
+            return
         if not folder:
             dialog = ui.createFolderDialog()
             dialog.title = "Folder holding 01-terrain-FIXED.stl and 02-sketch.dxf"
@@ -1028,8 +1055,8 @@ def run(context):
         log("Geometry")
         mesh_body = import_geometry(app, design, folder)
         if mesh_body is None:
-            ui.messageBox("No mesh body found. Set CONFIG['import_mesh'] = True "
-                          "or import the terrain manually first.")
+            notify(ui, app, "No mesh body found. Set CONFIG['import_mesh'] = True "
+                            "or import the terrain manually first.")
             return
         log("")
 
@@ -1040,7 +1067,7 @@ def run(context):
             ui.workspaces.itemById("CAMEnvironment").activate()
             cam = adsk.cam.CAM.cast(doc.products.itemByProductType("CAMProductType"))
         if cam is None:
-            ui.messageBox("Could not reach the Manufacture workspace.")
+            notify(ui, app, "Could not reach the Manufacture workspace.")
             return
 
         # 3. tools
@@ -1093,10 +1120,11 @@ def run(context):
         except Exception:
             pass
 
-        app.log(report)
-        ui.messageBox(report, "Lac de Neuchatel CAM")
+        notify(ui, app, report)
+
+        # Returned so a bridge-driven run gets the report back as JSON rather
+        # than having to scrape the log file.
+        return report
 
     except Exception:
-        if ui:
-            ui.messageBox("Script failed:\n\n%s" % traceback.format_exc(),
-                          "Lac de Neuchatel CAM")
+        notify(ui, app, "Script failed:\n\n%s" % traceback.format_exc())

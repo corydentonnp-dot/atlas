@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "id": "ad1e88c5-c760-4b5e-8436-b0e70f5035b6",
+    "author": "",
+    "description": {
+        "": "Localhost bridge that lets an external process run Python inside Fusion 360."
+    },
+    "version": "1.0.0",
+    "runOnStartup": false,
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}
