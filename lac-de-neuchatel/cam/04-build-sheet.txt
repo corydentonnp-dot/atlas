@@ -1,0 +1,51 @@
+LAC DE NEUCHATEL NECKLACE CASE - BUILD SHEET  (v2, natural reservoir)
+Terrain: Copernicus GLO-30 DEM (ESA) via OpenTopography. Credit required.
+
+SCALE   1.989 mm/km horizontal (1:502,857), 1.5x vertical
+        Lake surface 429 m = Z 0.000 mm, the datum for everything
+
+MAPLE PANEL   122.3 x 63.0 x 11.0 mm finished.  Blank 140 x 80 x 12 mm
+  Above datum   3.18 mm    Below datum  3.00 mm    Total Z cut 6.18 mm
+  Glue line at Z 0.000: terrain species above, lakebed species below
+  Grain along X, curl running across X
+
+CASE (cherry)  135 x 76 x 18.5 mm closed  =  5.3 x 3.0 x 0.73 in
+
+CHAIN ROUTE  (508 mm total)
+  Neuchatel shoreline groove    177.6 mm
+  Bielersee shoreline groove     94.8 mm
+  Morat shoreline groove         52.1 mm
+  Canal links (doubled)           6.4 mm
+  Saddle swale (2 strands)       62.5 mm
+  Coiled in the Val-de-Ruz      114.6 mm
+  Groove: 1/16" ball, Z -0.50, 2 mm inland of every shoreline
+  Swale: 3.2 mm wide, ~1 mm deep, cut by the TAPERED BALL in the terrain pass.
+         It is real drainage over a real saddle. No rectangular pocket anywhere.
+
+STONES (Z -1.5 pockets, 1/16" ball)
+  Sapphire   ( 65.5,  36.5)  dia 7.0 mm   at Neuchatel
+  Amethyst A ( 76.6,  17.4)  dia 3.0 mm   +28 mm along the groove
+  Amethyst B ( 38.0,  39.3)  dia 3.0 mm   -28 mm along the groove
+
+TOOLS
+  T1  Whiteside SC64 conical ball nose
+      tip dia 1.588 mm (1/16"), corner radius 0.794 mm (1/32"),
+      11 deg INCLUDED = 5.5 deg per side, 1/4" shank, 2-1/2" OAL
+      Fusion: Tapered Mill, dia 1.588, corner radius 0.794, taper 5.5 deg
+      18000 rpm, 1500 mm/min cut, 500 mm/min plunge, stepover 0.15 mm
+      Scallop at 0.15 stepover = 0.0036 mm
+  T2  1/4" flat end mill - facing and basin roughing only
+
+  ONE FILE, ONE BIT CHANGE.  T1 does terrain, groove and all three pockets.
+  The SC64 at 0.50 mm depth cuts a 1.48 mm cove - exactly right for 1.2 mm chain.
+
+OPERATIONS  (single posted file)
+  1  Face (T2)            leave 3.4 mm above Z0
+  2  Pocket basins (T2)   lake outlines to Z -2.0, 1 mm stepdown
+                          protects the 1.588 mm tip from a full 3 mm plunge
+  3  Parallel (T1)        0 deg, 0.15 mm stepover, boundary = panel outline
+  4  Trace groove (T1)    Z -0.50, single pass
+  5  Pocket stones (T1)   Z -1.50, three circles
+  No 3D roughing. Parallel never removes more than 0.27 mm per pass.
+
+DO NOT SAND THE TERRAIN.
