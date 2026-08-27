@@ -53,10 +53,20 @@ If `ping` fails, Fusion is closed or the add-in is not running
   names and reports failures rather than raising; check `cam_build_log.txt` and
   `cam_parameters_dump.txt` after a run.
 
+## Checking the machine
+
+`python preflight.py` verifies Python, the input files, that the terrain mesh is
+the repaired one, and that the CAM script and add-in are installed in Fusion.
+Add `--bridge` to also ping Fusion. Every failure prints its own fix. Run this
+first when something is behaving oddly — it is faster than guessing.
+
+`setup_windows.ps1` does the whole install and is safe to re-run.
+
 ## Testing
 
 ```bash
-python bridge/tests/test_bridge.py     # no Fusion needed, opens no socket
+python tests/test_cam_script.py        # 40 checks, no Fusion needed
+python bridge/tests/test_bridge.py     # 45 checks, no Fusion, no socket
 python repair_terrain_stl.py cam/01-terrain.stl /tmp/out.stl
 ```
 

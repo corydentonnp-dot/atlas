@@ -3,6 +3,11 @@
 A Fusion 360 script that builds the entire CAM job for the relief carving, plus
 a repair tool for the terrain mesh.
 
+> **Setting this up on a new machine? → [QUICKSTART.md](QUICKSTART.md).**
+> One command does the install:
+> `powershell -ExecutionPolicy Bypass -File .\setup_windows.ps1`
+> Then `python preflight.py` tells you whether the machine is ready to cut.
+
 ```
 lac-de-neuchatel/
 ├── LacDeNeuchatel_CAM.py     the Fusion script — run from Scripts and Add-Ins
