@@ -62,3 +62,6 @@ tokens/
 *.key
 *.pem
 service_account.json
+
+# Research raw corpora and generated datasets (temporary / local only)
+research/replica_catalog_study/data/
